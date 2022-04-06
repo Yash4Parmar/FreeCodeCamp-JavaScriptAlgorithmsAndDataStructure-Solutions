@@ -285,13 +285,29 @@ console.log(newarr);*/
 // console.log(indices);
 // console.log(arr);
 /******************************************************************************************* */
- const arr = [
+ /*const arr = [
   { first: "Romeo", last: "Montague" },
   { first: "Mercutio", last: null }, 
   { first: "Tybalt", last: "Capulet" }
 ];
-//   console.log(arr[0].first);
+const obj = {
+    first: "yash",
+    last: "parmar"
+}
+let keys = Object.keys(obj);
+
+//   console.log(keys);
+  console.log(obj.hasOwnProperty("first"));
   for(let i in arr){
-      console.log(arr[i].first);
-      console.log(arr[i].last);
-  }
+    //   console.log(arr[i].first);
+    //   console.log(arr[i].last);
+  }*/
+/***************************************************************************************************** */
+var arr = ["apple", "mango", "apple", 
+"orange", "mango", "mango"];
+
+function removeDuplicates(arr) {
+return arr.filter((item, index) => arr.indexOf(item) === index);
+// console.log(arr.indexOf("apple"));
+}
+console.log(removeDuplicates(arr));
